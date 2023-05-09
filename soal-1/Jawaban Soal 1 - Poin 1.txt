@@ -14,7 +14,7 @@ i = 1
 Iterasi 3:
 x = 2 (dari Iterasi 2)
 i = 2
-  x = 2 + 2 * 2
-  x = 8
+  x = 2 + (2 * 2)
+  x = 6
 
-Jadi, output dari program adalah "8"
+Jadi, output dari program adalah "6"
