@@ -6,7 +6,17 @@ function onPageLoad() {
 
     // semua validasi sukses
     if(validasiNamaLengkap() && validasiJenisKelamin() && validasiHobi()) {
-      alert("Data biodata tersimpan.");
+      const fnama = $('#form_biodata').find('input[name=nama_lengkap]');
+      const fjk = $('#form_biodata').find('input[name=jenis_kelamin]:checked');
+      const hobi = [];
+      $.each($('#form_biodata').find('input[name=hobi]:checked'), function(idx, el) {
+        hobi.push($(el).val());
+      });
+      var message = "Data biodata tersimpan.\nNama Lengkap: %nama%\nKelamin: %jk%\nHobi: %hb%";
+      message = message.replace("%nama%", fnama.val());
+      message = message.replace("%jk%", fjk.val());
+      message = message.replace("%hb%", hobi.join(", "));
+      alert(message);
     } else {
       // jika ada input yg belum diisi, memunculkan alert dari validasi masing-masing field.
     }
