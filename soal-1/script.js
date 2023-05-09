@@ -11,4 +11,4 @@ function cetakTelurAtauAyam(x, y) {
   console.log(text);
 }
 
-cetakTelurAtauAyam(1, 6);
+cetakTelurAtauAyam(0, 3);
