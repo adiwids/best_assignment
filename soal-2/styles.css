@@ -1,0 +1,38 @@
+body {
+  display: flex;
+}
+
+form {
+  padding: 8px;
+}
+
+form.align-center {
+  margin: 0 auto;
+}
+
+form.bordered {
+  border: solid 1px #FFCCCC;
+}
+form .field-group {
+  display: flex;
+  padding: 4px;
+  margin-bottom: 4px;
+}
+
+form .field-group label {
+  margin-right: 8px;
+}
+
+form button {
+  margin-top: 8px;
+}
+
+
+form .form-header {
+  border-bottom: solid 1px #FFCCCC;
+  margin-bottom: 8px;
+}
+
+form .form-header h1 {
+  text-align: center;
+}

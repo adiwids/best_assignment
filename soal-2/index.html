@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM BIODATA</title>
+  <link href="/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <form action="#" method="post" id="form_biodata" class="align-center bordered">
+    <div class="form-header">
+      <h1>Form Input Biodata</h1>
+    </div>
+    <div class="field-group">
+      <label for="nama_lengkap">Nama Lengkap:</label>
+      <input type="text" name="nama_lengkap" class="input-field">
+    </div>
+    <div class="field-group">
+      <label for="jenis_kelamin">Jenis Kelamin:</label>
+      <span class="radio-button">
+        <input type="radio" name="jenis_kelamin" value="L" id="jenis_kelamin_laki">
+        <label for="jenis_kelamin_laki">Laki-Laki</label>
+      </span>
+      <span class="radio-button">
+        <input type="radio" name="jenis_kelamin" value="L" id="jenis_kelamin_perempuan">
+        <label for="jenis_kelamin_perempuan">Perempuan</label>
+      </span>
+    </div>
+    <div class="field-group">
+      <label for="hobi">Hobi:</label>
+      <span class="check-button">
+        <input type="checkbox" name="hobi" value="Baca Buku" id="hobi_baca_buku">
+        <label for="hobi_baca_buku">Baca Buku</label>
+      </span>
+      <span class="check-button">
+        <input type="checkbox" name="hobi" value="Olah Raga" id="hobi_baca_olahraga">
+        <label for="hobi_baca_olahraga">Olah Raga</label>
+      </span>
+      <span class="check-button">
+        <input type="checkbox" name="hobi" value="Main Game" id="hobi_baca_main_game">
+        <label for="hobi_baca_main_game">Main Game</label>
+      </span>
+      <span class="check-button">
+        <input type="checkbox" name="hobi" value="Hiking" id="hobi_baca_hiking">
+        <label for="hobi_baca_hiking">Hiking</label>
+      </span>
+    </div>
+    <button type="button" id="form_submit">Simpan</button>
+  </form>
+
+  <script src="/jquery-3.6.4.min.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>
